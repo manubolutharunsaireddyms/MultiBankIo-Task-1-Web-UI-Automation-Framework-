@@ -19,7 +19,13 @@ public class ContentPage extends SafeActions {
 	private WebElement applestrore;
 	@FindBy(xpath = "//a[@aria-label='Google Play logo']//span")
 	private WebElement googlestrore;
+	@FindBy(xpath = "//div[contains(text(),'Why Multibank?')]")
+	private WebElement whymultibank;
 	private WebDriver driver;
+	@FindBy(xpath = "//div[@id='__next']//div[@class='style_menu-item__SLdA4']")
+	private List<WebElement> navigationItems;
+	@FindBy(xpath = "//div[@class='style_menu-container__Ha_wV']//a")
+	private List<WebElement> navigationItems1;
 
 	public ContentPage(WebDriver driver) {
 		this.driver = driver;

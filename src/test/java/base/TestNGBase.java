@@ -5,6 +5,8 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
 public class TestNGBase {
@@ -14,8 +16,23 @@ public class TestNGBase {
 
 	@BeforeClass
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", ".//Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		String browserName = getKey("browserName");
+		switch (browserName.toLowerCase()) {
+        case "chrome":
+        	 	System.setProperty("webdriver.chrome.driver", ".//Drivers/chromedriver.exe");
+            driver = new ChromeDriver();
+            break;
+        case "edge":
+        		System.setProperty("webdriver.edge.driver", ".//Drivers/msedgedriver.exe");
+            driver = new EdgeDriver();
+            break;
+        case "firefox":
+        		System.setProperty("webdriver.gecko.driver", ".//Drivers/geckodriver.exe");
+            driver = new FirefoxDriver();
+            break;
+        default:
+            throw new IllegalArgumentException("Invalid Browser: " + browserName);
+    }
 		driver.get("https://trade.multibank.io/");
 		driver.manage().window().maximize();
 	}

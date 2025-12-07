@@ -1,6 +1,7 @@
 package utils;
 
 import java.time.Duration;
+import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -45,4 +46,32 @@ public class SafeActions {
 		}
 	}
 
+	public void scrollToBottom(WebDriver driver, WebElement element) {
+		try {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public String switchTo(WebDriver driver, WebElement element) {
+		String text = null;
+		try {
+			String crr = driver.getWindowHandle();
+			Set<String> brr = driver.getWindowHandles();
+			for (String s : brr) {
+				if (!s.equals(crr)) {
+					driver.switchTo().window(s);
+					text = getText(driver, element);
+					driver.close();
+					break;
+				}
+			}
+			driver.switchTo().window(crr);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return text;
+	}
 }

@@ -16,6 +16,8 @@ public class SpotTradingPage extends SafeActions {
 	private WebElement spotHeading;
 	@FindBy(xpath = "//button[@class='style_tab__xRtAF']//span")
 	private List<WebElement> spotlist;
+	@FindBy(xpath = "//div[@class='style_scroller__yxXrE style_scrollbar-hidden__0wuN_']//tr[@class='style_headers__CDSEu']//th//span")
+	private List<WebElement> tradingdata;
 
 	private WebDriver driver;
 
@@ -33,20 +35,30 @@ public class SpotTradingPage extends SafeActions {
 		}
 		return spotheadertext;
 	}
-	public List<String> validateSpotList()
-	{
+
+	public List<String> validateSpotList() {
 		List<String> spotitems = new ArrayList<>();
 		try {
-			for(int i=0;i<spotlist.size();i++)
-			{
-				spotitems.add(getText(driver,spotlist.get(i)));
+			for (int i = 0; i < spotlist.size(); i++) {
+				spotitems.add(getText(driver, spotlist.get(i)));
 			}
-			
-		}
-		catch(Exception e)
-		{
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return spotitems;
+	}
+
+	public List<String> validateSpotDataStructure() {
+		List<String> dataitems = new ArrayList<>();
+		try {
+			for (int i = 0; i < tradingdata.size(); i++) {
+				dataitems.add(getText(driver, tradingdata.get(i)));
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return dataitems;
 	}
 }

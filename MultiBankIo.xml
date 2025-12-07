@@ -5,9 +5,14 @@
         <listener class-name="reports.ExtentTestListener"/>
     </listeners>
 
-    <test name="Test">
+    <test name="NavigationTests">
         <classes>
             <class name="tests.NavigationTests"/>
+        </classes>
+    </test>
+    <test name="TradingTests">
+        <classes>
+            <class name="tests.TradingTests"/>
         </classes>
     </test>
 

@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-07T18:04:41 GST" name="Default suite" finished-at="2025-12-07T18:05:21 GST" duration-ms="40283">
+  <suite started-at="2025-12-07T22:38:47 GST" name="Suite" finished-at="2025-12-07T22:39:25 GST" duration-ms="38622">
     <groups>
     </groups>
-    <test started-at="2025-12-07T18:04:41 GST" name="Default test" finished-at="2025-12-07T18:05:21 GST" duration-ms="40283">
+    <test started-at="2025-12-07T22:38:47 GST" name="TradingTests" finished-at="2025-12-07T22:39:25 GST" duration-ms="38284">
       <class name="tests.TradingTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TradingTests@ba2f4ec]" started-at="2025-12-07T18:04:41 GST" name="setup" finished-at="2025-12-07T18:05:17 GST" duration-ms="36649" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TradingTests@7d8704ef]" started-at="2025-12-07T22:38:47 GST" name="setup" finished-at="2025-12-07T22:39:19 GST" duration-ms="32586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TradingTests@ba2f4ec]" started-at="2025-12-07T18:05:17 GST" name="setUp" finished-at="2025-12-07T18:05:17 GST" duration-ms="58" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TradingTests@7d8704ef]" started-at="2025-12-07T22:39:19 GST" name="setUp" finished-at="2025-12-07T22:39:19 GST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSpotHeading()[pri:0, instance:tests.TradingTests@ba2f4ec]" started-at="2025-12-07T18:05:17 GST" name="testSpotHeading" finished-at="2025-12-07T18:05:21 GST" duration-ms="3074" status="PASS">
+        <test-method signature="testSpotDataStructure()[pri:0, instance:tests.TradingTests@7d8704ef]" started-at="2025-12-07T22:39:19 GST" name="testSpotDataStructure" finished-at="2025-12-07T22:39:22 GST" duration-ms="3016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSpotDataStructure -->
+        <test-method signature="testSpotHeading()[pri:0, instance:tests.TradingTests@7d8704ef]" started-at="2025-12-07T22:39:22 GST" name="testSpotHeading" finished-at="2025-12-07T22:39:25 GST" duration-ms="2238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSpotHeading -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TradingTests@ba2f4ec]" started-at="2025-12-07T18:05:21 GST" name="tearDown" finished-at="2025-12-07T18:05:21 GST" duration-ms="456" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TradingTests@7d8704ef]" started-at="2025-12-07T22:39:22 GST" name="setUp" finished-at="2025-12-07T22:39:22 GST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TradingTests@7d8704ef]" started-at="2025-12-07T22:39:25 GST" name="tearDown" finished-at="2025-12-07T22:39:25 GST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.TradingTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TradingTests -->
+    <test started-at="2025-12-07T22:38:47 GST" name="NavigationTests" finished-at="2025-12-07T22:39:25 GST" duration-ms="38622">
+      <class name="tests.NavigationTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NavigationTests@6ed3ccb2]" started-at="2025-12-07T22:38:47 GST" name="setup" finished-at="2025-12-07T22:39:19 GST" duration-ms="32665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNavigationLinks()[pri:0, instance:tests.NavigationTests@6ed3ccb2]" started-at="2025-12-07T22:39:19 GST" name="testNavigationLinks" finished-at="2025-12-07T22:39:23 GST" duration-ms="3769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationLinks -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NavigationTests@6ed3ccb2]" started-at="2025-12-07T22:39:19 GST" name="setUp" finished-at="2025-12-07T22:39:19 GST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NavigationTests@6ed3ccb2]" started-at="2025-12-07T22:39:23 GST" name="setUp" finished-at="2025-12-07T22:39:23 GST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigtionItems()[pri:0, instance:tests.NavigationTests@6ed3ccb2]" started-at="2025-12-07T22:39:23 GST" name="testNavigtionItems" finished-at="2025-12-07T22:39:25 GST" duration-ms="1783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigtionItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NavigationTests@6ed3ccb2]" started-at="2025-12-07T22:39:25 GST" name="tearDown" finished-at="2025-12-07T22:39:25 GST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.NavigationTests -->
+    </test> <!-- NavigationTests -->
+  </suite> <!-- Suite -->
 </testng-results>

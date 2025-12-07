@@ -6,16 +6,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.TestNGBase;
-import jdk.internal.org.jline.utils.Log;
 import junit.framework.Assert;
 import pages.SpotTradingPage;
 
-public class TradingTests extends TestNGBase{
-    private SpotTradingPage spotpage = null;
+public class TradingTests extends TestNGBase {
+	private SpotTradingPage spotpage = null;
+
 	@BeforeMethod
 	public void setUp() {
 		spotpage = new SpotTradingPage(driver);
 	}
+
 	@Test
 	public void testSpotHeading() {
 		try {
@@ -23,6 +24,18 @@ public class TradingTests extends TestNGBase{
 			List<String> data = spotpage.validateSpotList();
 			String result = String.join(",", data);
 			String items = getKey("spot_list");
+			Assert.assertEquals(items, result);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void testSpotDataStructure() {
+		try {
+			List<String> data = spotpage.validateSpotDataStructure();
+			String result = String.join(",", data);
+			String items = getKey("spot_data_structure");
 			Assert.assertEquals(items, result);
 		} catch (Exception e) {
 			e.printStackTrace();

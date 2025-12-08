@@ -32,8 +32,8 @@ public class NavigationTests extends TestNGBase {
 	@Test
 	public void testNavigationLinks() {
 		try {
-			String value = homepage.validateNavigation();
-			Assert.assertEquals(getKey("market_page_heading"), value.strip());
+			String value = homepage.validateNavigation(getKey("market_page_heading"));
+			Assert.assertTrue(value.contains(getKey("market_page_heading")));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

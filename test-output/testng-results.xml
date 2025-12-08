@@ -1,37 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-08T00:53:38 GST" name="Default suite" finished-at="2025-12-08T00:54:07 GST" duration-ms="28898">
+  <suite started-at="2025-12-08T22:49:01 GST" name="Suite" finished-at="2025-12-08T22:50:02 GST" duration-ms="61848">
     <groups>
     </groups>
-    <test started-at="2025-12-08T00:53:38 GST" name="Default test" finished-at="2025-12-08T00:54:07 GST" duration-ms="28898">
-      <class name="tests.TradingTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TradingTests@1c1bbc4e]" started-at="2025-12-08T00:53:38 GST" name="setup" finished-at="2025-12-08T00:54:00 GST" duration-ms="22098" status="PASS">
+    <test started-at="2025-12-08T22:49:01 GST" name="ContentTests" finished-at="2025-12-08T22:50:02 GST" duration-ms="61705">
+      <class name="tests.ContentTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:49:01 GST" name="setup" finished-at="2025-12-08T22:49:48 GST" duration-ms="47374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TradingTests@1c1bbc4e]" started-at="2025-12-08T00:54:00 GST" name="setUp" finished-at="2025-12-08T00:54:00 GST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:49:48 GST" name="setUp" finished-at="2025-12-08T22:49:48 GST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSpotDataStructure()[pri:0, instance:tests.TradingTests@1c1bbc4e]" started-at="2025-12-08T00:54:00 GST" name="testSpotDataStructure" finished-at="2025-12-08T00:54:04 GST" duration-ms="3593" status="PASS">
+        <test-method signature="testAppleStore()[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:49:48 GST" name="testAppleStore" finished-at="2025-12-08T22:49:54 GST" duration-ms="5301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppleStore -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:49:54 GST" name="setUp" finished-at="2025-12-08T22:49:54 GST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBannerImage()[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:49:54 GST" name="testBannerImage" finished-at="2025-12-08T22:49:54 GST" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBannerImage -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:49:54 GST" name="setUp" finished-at="2025-12-08T22:49:54 GST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGoogleStore()[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:49:54 GST" name="testGoogleStore" finished-at="2025-12-08T22:50:02 GST" duration-ms="7201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogleStore -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ContentTest@4e50c791]" started-at="2025-12-08T22:50:02 GST" name="tearDown" finished-at="2025-12-08T22:50:02 GST" duration-ms="640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ContentTest -->
+    </test> <!-- ContentTests -->
+    <test started-at="2025-12-08T22:49:01 GST" name="NavigationTests" finished-at="2025-12-08T22:50:02 GST" duration-ms="61021">
+      <class name="tests.NavigationTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NavigationTests@1a677343]" started-at="2025-12-08T22:49:01 GST" name="setup" finished-at="2025-12-08T22:49:48 GST" duration-ms="46989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NavigationTests@1a677343]" started-at="2025-12-08T22:49:48 GST" name="setUp" finished-at="2025-12-08T22:49:48 GST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationLinks()[pri:0, instance:tests.NavigationTests@1a677343]" started-at="2025-12-08T22:49:48 GST" name="testNavigationLinks" finished-at="2025-12-08T22:49:52 GST" duration-ms="3764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationLinks -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.NavigationTests@1a677343]" started-at="2025-12-08T22:49:52 GST" name="setUp" finished-at="2025-12-08T22:49:52 GST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigtionItems()[pri:0, instance:tests.NavigationTests@1a677343]" started-at="2025-12-08T22:49:52 GST" name="testNavigtionItems" finished-at="2025-12-08T22:50:01 GST" duration-ms="9149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigtionItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NavigationTests@1a677343]" started-at="2025-12-08T22:50:01 GST" name="tearDown" finished-at="2025-12-08T22:50:02 GST" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.NavigationTests -->
+    </test> <!-- NavigationTests -->
+    <test started-at="2025-12-08T22:49:01 GST" name="TradingTests" finished-at="2025-12-08T22:50:02 GST" duration-ms="61848">
+      <class name="tests.TradingTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TradingTests@13b6aecc]" started-at="2025-12-08T22:49:01 GST" name="setup" finished-at="2025-12-08T22:49:48 GST" duration-ms="47066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TradingTests@13b6aecc]" started-at="2025-12-08T22:49:48 GST" name="setUp" finished-at="2025-12-08T22:49:48 GST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSpotDataStructure()[pri:0, instance:tests.TradingTests@13b6aecc]" started-at="2025-12-08T22:49:48 GST" name="testSpotDataStructure" finished-at="2025-12-08T22:49:55 GST" duration-ms="6875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSpotDataStructure -->
-        <test-method signature="testSpotHeading()[pri:0, instance:tests.TradingTests@1c1bbc4e]" started-at="2025-12-08T00:54:04 GST" name="testSpotHeading" finished-at="2025-12-08T00:54:07 GST" duration-ms="2857" status="PASS">
+        <test-method signature="testSpotHeading()[pri:0, instance:tests.TradingTests@13b6aecc]" started-at="2025-12-08T22:49:55 GST" name="testSpotHeading" finished-at="2025-12-08T22:50:02 GST" duration-ms="7044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSpotHeading -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TradingTests@1c1bbc4e]" started-at="2025-12-08T00:54:04 GST" name="setUp" finished-at="2025-12-08T00:54:04 GST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TradingTests@13b6aecc]" started-at="2025-12-08T22:49:55 GST" name="setUp" finished-at="2025-12-08T22:49:55 GST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TradingTests@1c1bbc4e]" started-at="2025-12-08T00:54:07 GST" name="tearDown" finished-at="2025-12-08T00:54:07 GST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TradingTests@13b6aecc]" started-at="2025-12-08T22:50:02 GST" name="tearDown" finished-at="2025-12-08T22:50:02 GST" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.TradingTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TradingTests -->
+  </suite> <!-- Suite -->
 </testng-results>

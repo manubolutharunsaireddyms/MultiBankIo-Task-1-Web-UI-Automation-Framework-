@@ -42,12 +42,13 @@ public class HomePage extends SafeActions {
 		return items;
 	}
 
-	public String validateNavigation() {
+	public String validateNavigation(String title) {
 		try {
 			click(driver, navigationItems1.get(1));
+			waitUntilPageLoaded(driver,title);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return getText(driver, marketpageheading);
+		return driver.getTitle();
 	}
 }

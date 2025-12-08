@@ -23,21 +23,22 @@ This framework provides a robust, maintainable, and scalable solution for automa
 6. Drivers
    Contains the browser drivers for Chrome, Edge, and Firefox.
 
-please look the below framework structure
-   <img width="2558" height="1599" alt="image" src="https://github.com/user-attachments/assets/84017d5a-e316-47e9-b643-ba10f69cb3e0" />
-
-
 7. Test Reports
    HTML reports are generated for each test execution, providing a comprehensive overview of results.
 
-   <img width="2558" height="1466" alt="image" src="https://github.com/user-attachments/assets/a38d0823-3de1-4493-b7c6-3da4c5282bb2" />
+   <img width="2550" height="1336" alt="image" src="https://github.com/user-attachments/assets/af6f2d44-4f3d-4523-9b76-7ae818f2a944" />
 
-   <img width="2558" height="1366" alt="image" src="https://github.com/user-attachments/assets/3a0cd6d2-4c78-49ef-b9e9-c9908675358a" />
+   <img width="2559" height="1389" alt="image" src="https://github.com/user-attachments/assets/256e43e2-7e27-4f24-872c-de231217635b" />
 
 8. Test Data
    Stores test data in properties files for easy maintenance and reusability.
 
 9. TestNG XML Suites
    TestNG XML files are used to combine tests, classes, and packages to execute them together as a suite.
+
+   Framework Structure
+
+   <img width="2556" height="1462" alt="image" src="https://github.com/user-attachments/assets/bb4ea7f3-a7b7-4de4-942c-f1673d335ec0" />
+
 
 

@@ -41,7 +41,7 @@ public class ExtentTestListener implements ITestListener {
 
 	}
 
-	public void onTsetFailure(ITestResult result) {
+	public void onTestFailure(ITestResult result) {
 		test = extent.createTest(result.getName());
 		test.assignCategory(result.getMethod().getGroups());
 		test.createNode(result.getName());
